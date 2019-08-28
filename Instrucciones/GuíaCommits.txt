@@ -31,4 +31,8 @@ Commit - Estructuración del proyecto
 Commit - Diseño vista Home
   Nota: Lo que se hizo en la vista, después será pasado al componente de Vue
   -Edición de la vista home.blade.php
-    
+Commit - Estructurando API con Laravel
+  -Edición de las rutas en el archivo routes/web.php
+  -Creación y edición del controlador IdeaController
+    -php artisan make:controller IdeaController
+    -Creación de los métodos getIdeas y store
