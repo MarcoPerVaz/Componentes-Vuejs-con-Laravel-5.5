@@ -28,3 +28,7 @@ Commit - Estructuración del proyecto
     -composer dump-autoload
   -Comando para recrear las migraciones
     -php artisan migrate:refresh
+Commit - Diseño vista Home
+  Nota: Lo que se hizo en la vista, después será pasado al componente de Vue
+  -Edición de la vista home.blade.php
+    
