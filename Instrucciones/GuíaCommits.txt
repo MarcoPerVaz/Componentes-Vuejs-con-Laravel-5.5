@@ -36,3 +36,7 @@ Commit - Estructurando API con Laravel
   -Creación y edición del controlador IdeaController
     -php artisan make:controller IdeaController
     -Creación de los métodos getIdeas y store
+Commit - Creando el componente Idea
+  -Edición del archivo resources/assets/js/app.js
+  -Edición de la vista home.blade.php
+  -Creación y edición del componente Idea en resources/assets/js/components/Idea.vue
