@@ -1,3 +1,30 @@
 Commit - Creación del proyecto Laravel 5.5 con Vuejs2
   -Creación de la carpeta Instrucciones y dentro el archivo GuíaCommits.txt
   -Edición del archivo readme.md
+Commit - Estructuración del proyecto
+  Nota: Laravel-mix, NPM, composer
+  -Edición del archivo .env
+    DB_DATABASE=componentesvuejs_laravel55
+    DB_USERNAME=root
+    DB_PASSWORD=
+  -Edición de la carpeta database/migrations/
+    -Se borra la migración create_users_table
+    -Se borra la migración create_passwords_resets_table
+  -Creación del modelo Idea junto a su migración
+    -php artisan make:model Idea -m
+  -Edición de la migración create_ideas_table
+    -$table->string('description', 256);
+  -Edición de la carpeta app/
+    -Se borra el modelo User
+    -Edición del modelo Idea
+      -protected $fillable = [ 'description' ];
+  -Edición de routes/web.php
+  -Edición de la vista welcome.blade.php
+    -Se le cambia el nombre por home.blade.php
+    -Edición de la vista home.blade.php
+  -Instalar las dependencias de Javascript | NPM
+    -npm install
+  -Limpiar composer por la eliminación de algunos archvivos y para evitar problemas
+    -composer dump-autoload
+  -Comando para recrear las migraciones
+    -php artisan migrate:refresh
