@@ -35,7 +35,8 @@
     import toastr from 'toastr'
     import moment from 'moment' /* No olvidar importar los estilos en sass/app.scss */
 
-    moment.lang('es'); /* Para cambiar el lenguaje de Momentjs */
+    // moment.lang('es'); /* Para cambiar el lenguaje de Momentjs */ /* Esta fucnión está desactualizada y no se recomienda usar aunque funciona */
+    moment.locale('es'); /* Para cambiar el lenguaje de Momentjs */ /* Funciona y es la recomendada */
 
     export default {
         data() {

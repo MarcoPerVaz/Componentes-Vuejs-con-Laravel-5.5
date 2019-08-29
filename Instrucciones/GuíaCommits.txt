@@ -68,3 +68,12 @@ Commit - Guardar tareas, timezone y diseño de Toastr
   -Edición del archivo resources/assets/sass/app.scss para los diseños de Toastr
     -@import "~toastr/build/toastr.css";
     -npm run dev para compilar el css de Toastr
+Commit - CSRF-Token y Vue en producción
+  -Edición de la vista home.blade.php
+    -Se agrega en el header la etiqueta meta para el csrf
+      -<meta name="csrf-token" content="{{ csrf_token() }}">
+  -Edición del componente resources/assets/js/components/Idea.vue
+    -moment.locale('es');
+  Nota: Si se desea quitar el mensaje en consola de que vue está corriendo en entorno de desarrollo
+    -Usar el Comando
+      -npm run production
