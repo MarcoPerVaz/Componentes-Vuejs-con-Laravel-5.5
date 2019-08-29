@@ -15,12 +15,12 @@
             </form>
             <hr>
             <ul class="list-unstyled">
-                <li>
+                <li v-for="idea in ideas" :key="idea.description">
                     <p>
                         <small class="text-muted">
-                            <em>hace un minuto</em>
+                            <em>{{ idea.created_at }}</em>
                         </small>
-                        Mi nueva idea
+                        {{ idea.description }}
                     </p>
                 </li>
             </ul>
@@ -29,8 +29,28 @@
 </template>
 
 <script>
-    export default {
+    // Por si instalas la librería sin usar npm, acá lo debes importar si solo se va a usar en este componente
+    import axios from 'axios'
 
+    export default {
+        data() {
+            return {
+                ideas: [],
+            }
+        },
+
+        created: function(){
+            this.getIdeas();
+        },
+
+        methods: {
+            getIdeas:function() {
+                var urlIdeas = "mis-ideas";
+                axios.get(urlIdeas).then(response => {
+                    this.ideas = response.data;
+                })
+            }
+        }
     }
 </script>
 
