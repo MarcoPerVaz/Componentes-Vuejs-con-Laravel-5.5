@@ -42,3 +42,18 @@ Commit - Creando el componente Idea
   -Creación y edición del componente Idea en resources/assets/js/components/Idea.vue
 Commit - Programando el componente Idea
   -Edición del componente resources/assets/js/components/Idea.vue
+Commit - Implementando Momentjs y toastr
+  Nota: Momentjs es para mostrar fechas formateadas
+  Nota:Toastr es para mostrar popous con mensajes de aceptación o error
+  -Se instala la dependencia Momentjs
+    -Desde el sitio web
+      -https://momentjs.com/
+        -npm install moment --save
+  -Se instala la dependencia Toastr
+    -Desde el sitio web
+      -https://github.com/CodeSeven/toastr
+        -npm install --save toastr
+  -Edición del componente Idea
+    -Se importa la librería Toastr y Momentjs
+    -Creación de la función since para transformar la variable date en la fecha seleccionada
+    -npm run dev para compilar el componente
