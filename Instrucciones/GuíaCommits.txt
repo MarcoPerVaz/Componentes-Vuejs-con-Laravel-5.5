@@ -57,3 +57,14 @@ Commit - Implementando Momentjs y toastr
     -Se importa la librería Toastr y Momentjs
     -Creación de la función since para transformar la variable date en la fecha seleccionada
     -npm run dev para compilar el componente
+Commit - Guardar tareas, timezone y diseño de Toastr
+  -Edición del componente resources/assets/js/components/Idea.vue
+    -Creación de la función createIdea()
+    -Se implementa el cambio del lenguaje de Inglés a Español de Momentjs
+    -Edición de la zona horaria desde el sitio
+      -https://www.php.net/manual/es/timezones.php
+      -Edición del archivo config/app.php
+        -'timezone' => 'America/Mexico_City',
+  -Edición del archivo resources/assets/sass/app.scss para los diseños de Toastr
+    -@import "~toastr/build/toastr.css";
+    -npm run dev para compilar el css de Toastr
